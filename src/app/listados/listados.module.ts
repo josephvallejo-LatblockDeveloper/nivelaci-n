@@ -5,6 +5,11 @@ import { PlanetasComponent } from './pages/planetas/planetas.component';
 import { DescripcionComponent } from './pages/descripcion/descripcion.component';
 import { ListadosRoutingModule } from './listados-routing.module'
 
+//material
+import {MatTableModule} from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +19,10 @@ import { ListadosRoutingModule } from './listados-routing.module'
   ],
   imports: [
     CommonModule,
-    ListadosRoutingModule
+    ListadosRoutingModule,
+    MatTableModule,
+    MatCardModule,
+    MatPaginatorModule
   ]
 })
 export class ListadosModule { }
